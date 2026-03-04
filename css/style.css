@@ -1,20 +1,32 @@
 #container{
     background-color: white;
     display: grid;
-    height: 100vh;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 25vh 10vh 1fr;
+    height: 140vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 25vh 10vh 16vh 40vh 44vh 5vh;
     gap: 0px;
     margin: 0;
     grid-template-areas: 
-    'hd hd hd'
-    'na na na'
-    'mn mn mn';
+    'hd hd'
+    'na na'
+    'mn mn'
+    'mt mt'
+    'mt mt'
+    'dv3 ft';
+    font-family: main;
 }
 
-::marker {
-    height:100px;
-    color:green;
+@font-face{
+    font-family: main;
+    src: url(/fonts/FledoraDirtyn.otf);
+}
+
+#mitten {
+    grid-area: mt;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    gap: 10px;
 }
 
 #hd{
@@ -53,34 +65,82 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    background-image: url('../img/IMG-20260226-WA0017.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    font-size: 5vh;
+    color: green;
+    align-content: center;
+}
+
+#as{
+    background-color: white;
+    padding-left: 50px;
+    text-align: center;
+}
+
+#dv1{
+    background-color: white;
     
 }
 
-details{
-    margin-top: 50px;
+.slider{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
-details > summary {
-  padding: 10px;
-  width: 500px;
-  background-color: #eeeeee;
-  border: 2px;
-  box-shadow: 1px 1px 2px #bbbbbb;
-  cursor: pointer;
+.slide-track{
+    display: flex;
+    width: calc(100% * 8);
+    animation: scroll 20s linear infinite;
 }
 
-details > p {
-  background-color: #eeeeee;
-  width: 500px;
-  padding: 10px;
-  margin: 0;
-  box-shadow: 1px 1px 2px #bbbbbb;
+.slide{
+    width: calc(100%/8);
+    height: 100%;
+    flex-shrink: 0;
 }
 
-.text{
-    font-size:medium;
+.slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center -200px;
+}
+
+@keyframes scroll {
+    0% {transform: translateX(0);}
+    100% {transform: translateX(calc(-50%));}
+}
+
+#dv2{
+    background-color: white;
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+}
+
+#sc{
+    background-color: white;
+    padding-left: 50px;
+    text-align: center;
+}
+
+p{
+    font-size: 5vh;
+}
+
+#dv3{
+    grid-area: dv3;
+    background-color: whitesmoke;
+    border: 10px;
+    font-size: 3vh;
+    padding-left: 50px;
+}
+
+#ft{
+    grid-area: ft;
+    background-color: white;
+    font-size: 3vh;
+    padding-left: 50px;
 }
