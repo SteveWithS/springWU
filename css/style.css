@@ -260,3 +260,234 @@ details img{
     background-size: cover;
 }
 
+
+
+
+
+
+
+#wrap{
+    background-color: white;
+    display: grid;
+    height: 120vh;
+    grid-template-columns: 25vw 1fr 25vw;
+    grid-template-rows: 25vh 10vh 1fr 1fr;
+    gap: 0px;
+    margin: 0;
+    grid-template-areas: 
+    'hd3 hd3 hd3'
+    'na3 na3 na3'
+    'as3 mn3 dv5'
+    'as3 mn3 dv5';
+    font-family: main;
+}
+
+#hd3{
+    grid-area: hd3;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding-left: 150px;
+    align-content: space-around;
+    color: green;
+    background-image: url('../img/top.JPG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center -630px;
+}
+
+#hd3 img{
+    width: 25vh;
+}
+
+#na3{
+    grid-area: na3;
+    background-color: whitesmoke;
+    color: green;
+    
+    font-size: x-large;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+#mn3{
+    grid-area: mn3;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    justify-content: center;
+}
+
+#as3{
+    grid-area: as3;
+    background-image: url('../img/IMG-20260226-WA0023.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#dv5{
+    grid-area: dv5;
+    background-image: url('../img/IMG-20260226-WA0036.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+#papper{
+    background-color: white;
+    display: grid;
+    height: 120vh;
+    grid-template-columns: 25vw 1fr 25vw;
+    grid-template-rows: 25vh 10vh 1fr 1fr;
+    gap: 0px;
+    margin: 0;
+    grid-template-areas: 
+    'hd4 hd4 hd4'
+    'na4 na4 na4'
+    'as4 mn4 dv6'
+    'as4 mn4 dv6';
+    font-family: main;
+}
+
+#hd4{
+    grid-area: hd4;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding-left: 150px;
+    align-content: space-around;
+    color: green;
+    background-image: url('../img/top.JPG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center -630px;
+}
+
+#hd4 img{
+    width: 25vh;
+}
+
+#na4{
+    grid-area: na4;
+    background-color: whitesmoke;
+    color: green;
+    
+    font-size: x-large;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+#mn4{
+    grid-area: mn4;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+}
+
+main article {
+    width:30%;
+    height:35vh;
+    background-color:yellow;
+    border-radius: 10px;
+    overflow: hidden; 
+    text-align: center;
+    font-weight: 900;
+}
+
+main article img {
+    width: 100%;
+    height: 60%;
+    display: block;
+    object-fit: cover;
+}
+
+#as4{
+    grid-area: as4;
+    background-color: white;
+}
+
+#dv6{
+    grid-area: dv6;
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+#papp{
+    background-color: white;
+    display: grid;
+    height: 120vh;
+    grid-template-columns: 25vw 1fr 25vw;
+    grid-template-rows: 25vh 10vh 1fr 1fr;
+    gap: 0px;
+    margin: 0;
+    grid-template-areas: 
+    'hd5 hd5 hd5'
+    'na5 na5 na5'
+    'as5 mn5 dv7'
+    'as5 mn5 dv7';
+    font-family: main;
+}
+
+#hd5{
+    grid-area: hd5;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding-left: 150px;
+    align-content: space-around;
+    color: green;
+    background-image: url('../img/top.JPG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center -630px;
+}
+
+#hd5 img{
+    width: 25vh;
+}
+
+#na5{
+    grid-area: na5;
+    background-color: whitesmoke;
+    color: green;
+    
+    font-size: x-large;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+#mn5{
+    grid-area: mn5;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+}
+
+#as5{
+    grid-area: as5;
+    background-color: white;
+}
+
+#dv7{
+    grid-area: dv7;
+    background-color: white;
+}
